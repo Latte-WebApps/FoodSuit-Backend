@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("FoodSuit-Backend")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+1a9f122bf82b77242af88c8227a5c5cf351a66e4")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5a88c18e4b92640ba8240fa63b48b768fe1de02e")]
 [assembly: System.Reflection.AssemblyProductAttribute("FoodSuit-Backend")]
 [assembly: System.Reflection.AssemblyTitleAttribute("FoodSuit-Backend")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

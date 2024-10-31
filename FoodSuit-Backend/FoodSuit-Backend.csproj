@@ -14,7 +14,7 @@
         <PackageReference Include="Microsoft.EntityFrameworkCore.Relational" Version="8.0.10"/>
         <PackageReference Include="Microsoft.EntityFrameworkCore.Relational.Design" Version="1.1.6"/>
 
-        <PackageReference Include="MySql.EntityFrameworkCore" Version="8.0.5"/>
+        <PackageReference Include="MySql.EntityFrameworkCore" Version="8.0.8"/>
 
         <PackageReference Include="EntityFrameworkCore.CreatedUpdatedDate" Version="8.0.0"/>
 

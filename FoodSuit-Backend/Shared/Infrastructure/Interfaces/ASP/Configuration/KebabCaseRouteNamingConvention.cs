@@ -1,12 +1,13 @@
-﻿
-using FoodSuit_Backend.Shared.Infrastructure.Interfaces.ASP.Configuration.Extensions;
+﻿using FoodSuit_Backend.Shared.Infrastructure.Interfaces.ASP.Confifuration.Extensions;
 using Microsoft.AspNetCore.Mvc.ApplicationModels;
+
 namespace FoodSuit_Backend.Shared.Infrastructure.Interfaces.ASP.Configuration;
 
 /// <summary>
 /// Replaces the default route naming convention with a kebab-case one. 
 /// </summary>
 /// since 1.0.0
+
 public class KebabCaseRouteNamingConvention : IControllerModelConvention
 {
     /// <summary>

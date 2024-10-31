@@ -2,6 +2,13 @@
 
 namespace FoodSuit_Backend.Shared.Infrastructure.Persistence.EFC.Configuration.Extensions;
 
+
+/// <summary>
+/// String Extensions 
+/// </summary>
+/// <remarks>
+/// This class contains extension methods for string.
+/// </remarks>
 public static class StringExtensions
 {
     /// <summary>

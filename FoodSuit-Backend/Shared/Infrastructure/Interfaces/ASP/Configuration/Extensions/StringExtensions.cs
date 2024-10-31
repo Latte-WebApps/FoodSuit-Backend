@@ -1,5 +1,7 @@
 ﻿using System.Text.RegularExpressions;
-namespace FoodSuit_Backend.Shared.Infrastructure.Interfaces.ASP.Configuration.Extensions;
+
+namespace FoodSuit_Backend.Shared.Infrastructure.Interfaces.ASP.Confifuration.Extensions;
+
 
 public static partial class StringExtensions
 {
