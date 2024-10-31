@@ -1,0 +1,65 @@
+# Ignore Visual Studio temporary files, build results, and
+# JetBrains Rider specific files
+*.user
+*.userosscache
+*.suo
+*.sln.docstates
+.idea/
+*.sln.iml
+
+# Rider specific files
+.idea/
+*.sln.iml
+
+# Ignore build results
+[Dd]ebug/
+[Dd]ebugPublic/
+[Rr]elease/
+[Rr]eleases/
+x64/
+x86/
+[Aa][Rr][Mm]/
+[Aa][Rr][Mm]64/
+bld/
+[Bb]in/
+[Oo]bj/
+[Ll]og/
+[Ll]ogs/
+
+# Ignore NuGet packages
+*.nupkg
+*.snupkg
+packages/
+.nuget/
+
+# Ignore Entity Framework Migrations
+[Mm]igrations/
+
+# Ignore database files
+*.mdf
+*.ldf
+*.ndf
+
+# Ignore configuration files
+appsettings.json
+appsettings.*.json
+
+# Ignore publish output
+[Pp]ublish/
+[Pp]ublished[Ww]ebsites/
+
+# Ignore npm packages
+node_modules/
+
+# Ignore JetBrains Rider specific files
+.idea/
+*.sln.iml
+
+# Ignore other files
+.vscode/
+.vscode-test/
+.vscode-test-explorer/
+.vscode-test-explorer-output/
+.vscode-test-explorer-output.log
+.vscode-test-explorer-output.json
+.vscode-test-explorer-output.xml
