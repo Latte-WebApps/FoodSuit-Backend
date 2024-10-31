@@ -1,5 +1,5 @@
 ﻿namespace FoodSuit_Backend.Inventory.Interfaces.Rest.Resources;
 
-public record UpdateItemResource(int Id,string Name, int Quantity, string Image)
+public record UpdateItemResource(string Name, int Quantity, string Image)
 {
 }

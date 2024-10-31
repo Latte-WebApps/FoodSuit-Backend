@@ -6,7 +6,7 @@ namespace FoodSuit_Backend.Inventory.Domain.Services;
 public interface IItemCommandService
 {
     Task<Item?> Handle(CreateItemCommand command);
-    Task<Item?> Handle(UpdateItemCommand command);
+    Task<Item?> Handle(int id, UpdateItemCommand command);
     Task<bool?> Handle(DeleteItemCommand command);
     
 }

@@ -44,37 +44,28 @@ public class ItemController(
     }
 
     [HttpPut("{id:int}")]
-    public async Task<IActionResult> UpdateItem(UpdateItemResource resource)
+    public async Task<IActionResult> UpdateItem(int id, UpdateItemResource resource)
     {
+        if (id <= 0 || resource is null) 
+            return BadRequest("Invalid ID or resource is null.");
+
         try
         {
-            Console.WriteLine($"Received UpdateItem request for ID: {resource.Id}");
-            Console.WriteLine($"Resource Data - Name: {resource.Name}, Quantity: {resource.Quantity}, Image: {resource.Image}");
-
             var updateItemCommand = UpdateItemCommandFromResourceAssembler.ToCommandFromResource(resource);
+            var item = await itemCommandService.Handle(id, updateItemCommand);
 
-            var item = await itemCommandService.Handle(updateItemCommand);
+            if (item == null)
+                return NotFound($"Item not found with id: {id}");
 
-            if (item is null)
-            {
-                Console.WriteLine("Item not found.");
-                return NotFound($"Item with id {resource.Id} not found.");
-            }
-
-            return Ok(ItemResourceFromEntityAssembler.ToResourceFromEntity(item));
-        }
-        catch (ItemNotFoundException ex)
-        {
-            Console.WriteLine($"ItemNotFoundException: {ex.Message}");
-            return NotFound($"Item with id {resource.Id} not found.");
+            var itemResource = ItemResourceFromEntityAssembler.ToResourceFromEntity(item);
+            return Ok(itemResource);
         }
         catch (Exception ex)
         {
-            Console.WriteLine($"Exception: {ex.Message}");
-            Console.WriteLine($"StackTrace: {ex.StackTrace}");
-            return StatusCode(500, "Internal server error");
+            return StatusCode(500, $"An error occurred: {ex.Message}");
         }
     }
+
 
 
     [HttpGet]

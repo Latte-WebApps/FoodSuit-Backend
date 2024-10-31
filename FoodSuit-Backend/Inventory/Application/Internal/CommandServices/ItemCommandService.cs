@@ -24,11 +24,12 @@ public class ItemCommandService(IItemRepository itemRepository, IUnitOfWork unit
         }
     }
 
-    public async Task<Item?> Handle(UpdateItemCommand command)
-    {
-        var item = await itemRepository.FindByIdAsync(command.Id);
 
-        if (item == null) {throw new Exception($"Item not found with id: {command.Id}");}
+    public async Task<Item?> Handle(int id, UpdateItemCommand command)
+    {
+        var item = await itemRepository.FindByIdAsync(id);
+
+        if (item == null) {throw new Exception($"Item not found with id: {id}");}
         
         item.UpdateInformation(command.Name, command.Quantity, command.Image);
         
