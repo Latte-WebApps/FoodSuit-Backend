@@ -1,5 +1,6 @@
 ﻿using FoodSuit_Backend.Inventory.Domain.Model.Aggregates;
 using FoodSuit_Backend.Shared.Domain.Repositories;
+
 using FoodSuit_Backend.Shared.Infrastructure.Persistence.EFC.Configuration;
 using Microsoft.EntityFrameworkCore;
 
@@ -19,4 +20,3 @@ public abstract class BaseRepository<TEntity>(AppDbContext context) : IBaseRepos
     public void Remove(TEntity entity) => Context.Set<TEntity>().Remove(entity);
 
     public async Task<IEnumerable<TEntity>> ListAsync() => await Context.Set<TEntity>().ToListAsync();
-}

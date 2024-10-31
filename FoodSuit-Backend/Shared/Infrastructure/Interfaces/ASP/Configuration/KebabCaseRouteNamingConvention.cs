@@ -7,7 +7,7 @@ namespace FoodSuit_Backend.Shared.Infrastructure.Interfaces.ASP.Configuration;
 /// Replaces the default route naming convention with a kebab-case one. 
 /// </summary>
 /// since 1.0.0
-///
+
 public class KebabCaseRouteNamingConvention : IControllerModelConvention
 {
     /// <summary>

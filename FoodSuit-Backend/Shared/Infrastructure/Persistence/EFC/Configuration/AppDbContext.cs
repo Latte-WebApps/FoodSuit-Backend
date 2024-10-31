@@ -8,6 +8,7 @@ namespace FoodSuit_Backend.Shared.Infrastructure.Persistence.EFC.Configuration;
 
 
 public class AppDbContext(DbContextOptions<AppDbContext> options) : DbContext(options)
+
 {
     protected override void OnConfiguring(DbContextOptionsBuilder builder)
     {
@@ -28,7 +29,7 @@ public class AppDbContext(DbContextOptions<AppDbContext> options) : DbContext(op
             .IsRequired();  
         builder.Entity<Item>().Property(f => f.Image)
             .IsRequired();
-        
+ 
         builder.UseSnakeCaseNamingConvention();
 
     }

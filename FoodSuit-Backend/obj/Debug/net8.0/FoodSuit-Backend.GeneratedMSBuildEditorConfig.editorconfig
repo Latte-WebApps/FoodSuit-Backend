@@ -3,13 +3,14 @@ build_property.TargetFramework = net8.0
 build_property.TargetPlatformMinVersion = 
 build_property.UsingMicrosoftNETSdkWeb = true
 build_property.ProjectTypeGuids = 
-build_property.InvariantGlobalization = 
+build_property.InvariantGlobalization = true
 build_property.PlatformNeutralAssembly = 
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = FoodSuit_Backend
 build_property.RootNamespace = FoodSuit_Backend
 build_property.ProjectDir = C:\Users\andre\Desktop\UPC\2024-2\apps web\tb2\backend\FoodSuit-Backend\FoodSuit-Backend\
+
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 8.0
